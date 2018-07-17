@@ -46,21 +46,21 @@
 			</div>
 		  </div> -->
 			
-		  <a href="<?php echo base_url('index.php/Login/register') ?>">Registrasi</a>
+		  
 
-		</form> -->
+		</form> 
 		<div><?=validation_errors()?></div>
 		<div><?=$this->session->flashdata('error')?></div>
 		<?=form_open('login', ['class'=>'form-horizontal'])?>
 		  <div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">Username</label>
-			<div class="col-sm-10">
+			<div class="col-sm-3">
 			  <input type="text" class="form-control" name="username">
 			</div>
 		  </div>
 		  <div class="form-group">
 			<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-			<div class="col-sm-10">
+			<div class="col-sm-3">
 			  <input type="password" class="form-control" name="password">
 			</div>
 		  </div>
@@ -75,9 +75,12 @@
 		  </div>
 		  <div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-			  <button type="submit" class="btn btn-default">Sign in</button>
+			  <button type="submit" class="btn btn-success">Sign in</button>
 			</div>
 		  </div>
+		  
+		  <p>Don't have account?</p>
+		  <a href="<?php echo base_url('index.php/Login/register') ?>">Registrasi</a>
 		</form>
 	</body>
 </html>
